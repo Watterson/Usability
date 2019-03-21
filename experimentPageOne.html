@@ -1,0 +1,199 @@
+
+<!doctype html>
+<title>6062Comp</title>
+
+<link href="css/app.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="jquery/app.js"  type="text/javascript"></script>
+
+<body>
+  <div class="compare-overlay " style="display: none">
+      <a  class="button" id="compareAll">Compare All</i></a>
+      <div class="compare-container">
+        <h5>Comparing: <strong id="compareNum"></strong> items</h5>
+        <div class="compare-productList">
+          <div class="compare-product" id="product1" style="display: none">
+            <img class="compare-productImage" src="images/kettle-one.jpg" >
+            <div style="width: 80%; display: block; text-align: center;">
+              <p>Electric Tea Kettle, Cordless Glass Pot 1.7 Liter</p>
+              <p style="text-align: center">$2099</p>
+            </div>
+            <div>
+              <a  class="remove" id="removeCompare">Remove</a>
+            </div>
+            <p></p>
+          </div>
+          <div class="compare-product" id="product2" style="display: none">
+            <img class="compare-productImage" src="images/kettle-one.jpg" >
+            <div style="width: 80%; display: block; text-align: center;">
+              <p>Electric Tea Kettle, Cordless Glass Pot 1.7 Liter</p>
+              <p style="text-align: center">$2099</p>
+            </div>
+            <div>
+              <a  class="remove" id="removeCompare">Remove</i></a>
+            </div>
+            <p></p>
+          </div>
+          <div class="compare-product" id="product3" style="display: none">
+            <img class="compare-productImage" src="images/kettle-one.jpg" >
+            <div style="width: 80%; display: block; text-align: center;">
+              <p>Electric Tea Kettle, Cordless Glass Pot 1.7 Liter</p>
+              <p style="text-align: center">$2099</p>
+            </div>
+            <div>
+              <a  class="remove" id="removeCompare">Remove</i></a>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <header>
+    <span><img src="images/nav_bar.jpg" ><span>
+  </header>
+  <div id="main">
+    <article>
+
+      <div id="productList">
+        <div class="product">
+          <div class="productImage-container" id="productImage1">
+              <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="description-container">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%">
+                <p class="seller">by COSORI</p>
+    						<div>
+                	<span><img class="star-rating" src="images/star.png" ></span>
+    						</div>
+    						<div>
+    					  	<span class="currency">$</span><span>205</span><span>99</span>
+    						</div>
+              </div>
+              <div style="width: 60%">
+                  <a  class="button" id="compare">Compare <i class="far fa-square"></i></a>
+                  <input type="hidden" class="compare-input" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productImage-container" id="productImage1">
+              <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="description-container">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%">
+                <p class="seller">by COSORI</p>
+    						<div>
+                	<span><img class="star-rating" src="images/star.png" ></span>
+    						</div>
+    						<div>
+    					  	<span class="currency">$</span><span>205</span><span>99</span>
+    						</div>
+              </div>
+              <div style="width: 60%">
+                  <a  class="button" id="compare1" name="1">Compare <i class="far fa-square"></i></i></a>
+                  <input type="hidden" class="compare-input" value="2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productImage-container" id="productImage1">
+              <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="description-container">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%">
+                <p class="seller">by COSORI</p>
+    						<div>
+                	<span><img class="star-rating" src="images/star.png" ></span>
+    						</div>
+    						<div>
+    					  	<span class="currency">$</span><span>205</span><span>99</span>
+    						</div>
+              </div>
+              <div style="width: 60%">
+                  <a  class="button" id="compare" name="2">Compare <i class="far fa-square"></i></i></a>
+                  <input type="hidden" id="compare-input" value="3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productImage-container" id="productImage1">
+              <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="description-container">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%">
+                <p class="seller">by COSORI</p>
+    						<div>
+                	<span><img class="star-rating" src="images/star.png" ></span>
+    						</div>
+    						<div>
+    					  	<span class="currency">$</span><span>205</span><span>99</span>
+    						</div>
+              </div>
+              <div style="width: 60%">
+                  <a  class="button" id="compare">Compare <i class="far fa-square"></i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productImage-container" id="productImage1">
+              <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="description-container">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%">
+                <p class="seller">by COSORI</p>
+    						<div>
+                	<span><img class="star-rating" src="images/star.png" ></span>
+    						</div>
+    						<div>
+    					  	<span class="currency">$</span><span>205</span><span>99</span>
+    						</div>
+              </div>
+              <div style="width: 60%">
+                  <a  class="button" id="compare">Compare <i class="far fa-square"></i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productImage-container" id="productImage1">
+              <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="description-container">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%">
+                <p class="seller">by COSORI</p>
+    						<div>
+                	<span><img class="star-rating" src="images/star.png" ></span>
+    						</div>
+    						<div>
+    					  	<span class="currency">$</span><span>205</span><span>99</span>
+    						</div>
+              </div>
+              <div style="width: 60%">
+                  <a  class="button" id="compare">Compare <i class="far fa-square"></i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <nav>Nav</nav>
+  </div>
+  <footer>Footer</footer>
+</body>
