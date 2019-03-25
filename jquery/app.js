@@ -309,7 +309,7 @@ $(document).ready(function() {
     console.log(startTime);
     $( ".button" ).click(function() {
       product = $(this).siblings("input[type=hidden]").val();
-
+      time = getTime();
       if($(this).hasClass('inactive')){
         $(this).removeClass('inactive');
         $(this).addClass('active');
@@ -327,14 +327,44 @@ $(document).ready(function() {
       //   console.log('hide compare');
       //   $('.compare-overlay').css('display', 'none');
       // }
-      var x = compareList(product, startTime);
+      var x = compareList(product, time);
       checkCompareCount(x);
 
     });
     $( ".remove" ).click(function() {
       product = $(this).siblings("input[type=hidden]").val();
-      removeCompare(product, startTime);
+      time = getTime();
+      removeCompare(product, time);
       checkCompareCount();
     });
-    $()
+    $("#compareAll").click(function() {
+      if(correctCompares == 3){
+        $("#main").css('display', 'none');
+        $('.compare-overlay').css('display', 'none');
+        $("#main2").css('display', 'flex');
+        $time = getTime();
+        errorClick($time, 'compareAll')
+      }else {
+        alert('You are trying to select the wrong Laptops!   Please try again!');
+      }
+      return;
+    });
+    $(".buyButton").click(function(){
+      product = $(this).siblings("input[type=hidden]").val();
+      if (product == 6) {
+        //move to next pageHref
+        results['allClicks' , clickCount];
+        results['correctClicks' , correctClicks];
+        results['errorClicks' , errorClicks];
+        results['fixClicks' , fixClicks];
+        results['startime', startTime];
+        results['endtime', endTime];
+
+        return;
+
+        console.log(results);
+      }else {
+        alert('Wrong Laptop! Please compare the Laptops below and try again!');
+      }
+    });
 });

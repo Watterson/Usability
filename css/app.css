@@ -127,6 +127,43 @@ a.button{
 	position:relative;
 	top:1px;
 }
+a.buyButton{
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FEBD69), color-stop(1, #FEC480));
+	background:-moz-linear-gradient(top, #FEBD69 5%, #FEC480 100%);
+	background:-webkit-linear-gradient(top, #FEBD69 5%, #FEC480 100%);
+	background:-o-linear-gradient(top, #FEBD69 5%, #FEC480 100%);
+	background:-ms-linear-gradient(top, #FEBD69 5%, #FEC480 100%);
+	background:linear-gradient(to bottom, #FEBD69 5%, #FEC480 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEBD69', endColorstr='#FEC480',GradientType=0);
+	background-color:#FEBD69;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#131A22;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+
+}
+.buyButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FEC480), color-stop(1, #FEBD69));
+	background:-moz-linear-gradient(top, #FEC480 5%, #FEBD69 100%);
+	background:-webkit-linear-gradient(top, #FEC480 5%, #FEBD69 100%);
+	background:-o-linear-gradient(top, #FEC480 5%, #FEBD69 100%);
+	background:-ms-linear-gradient(top, #FEC480 5%, #FEBD69 100%);
+	background:linear-gradient(to bottom, #FEC480 5%, #FEBD69 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEC480', endColorstr='#FEBD69',GradientType=0);
+	background-color:#FEC480;
+}
+.butButton:active {
+	position:relative;
+	top:1px;
+}
 .compare-overlay{
   position: absolute;
   top: 0;
