@@ -209,3 +209,60 @@ a.button{
 .inactive{
   display: none;
 }
+#main2{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#productList2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.product-compare{
+  width: 30%;
+  height:900px;
+  border: 2px solid #B6B8B9;
+}
+.product-compare-image{
+  height: 200px;
+  width: 90%;
+  margin: 10px;
+  border: 2px solid #B6B8B9;
+}
+.product-compare-tile{
+  height: 25px;
+  width: 900%;
+  margin: 10px;
+  border: 2px solid #B6B8B9;
+  justify-content: center
+}
+.product-compare-details{
+  height: 50px;
+  width: 90%;
+  margin: 10px;
+  border: 2px solid #B6B8B9;
+}
+#main2 > article {
+  flex: 1;
+}
+#main2 > nav
+{
+  flex: 0 0 20vw;
+  background: beige;
+}
+
+#main2 > nav {
+  order: -1;
+  border-right: 2px solid #B6B8B9;
+}
+.productStatsImage{
+  height:  150px;
+  width: 100%;
+}
+.product-compare-title > .title{
+  padding: 5px;
+  margin: 5px;
+}

@@ -11,9 +11,9 @@
   <div class="compare-overlay " style="display: none">
       <a  class="button" id="compareAll">Compare All</i></a>
       <div class="compare-container">
-        <h5>Comparing: <strong id="compareNum"></strong> items</h5>
+        <h5>Comparing: <strong class="compareCount"></strong> items</h5>
         <div class="compare-productList">
-          <div class="compare-product" id="product1" style="display: none">
+          <div class="compare-product inactive" id="product1" style="display: none">
             <img class="compare-productImage" src="images/kettle-one.jpg" >
             <div style="width: 80%; display: block; text-align: center;">
               <p>Electric Tea Kettle, Cordless Glass Pot 1.7 Liter</p>
@@ -21,10 +21,11 @@
             </div>
             <div>
               <a  class="remove" id="removeCompare">Remove</a>
+              <input type="hidden" class="compare-input" value="1">
             </div>
             <p></p>
           </div>
-          <div class="compare-product" id="product2" style="display: none">
+          <div class="compare-product inactive" id="product2" style="display: none">
             <img class="compare-productImage" src="images/kettle-one.jpg" >
             <div style="width: 80%; display: block; text-align: center;">
               <p>Electric Tea Kettle, Cordless Glass Pot 1.7 Liter</p>
@@ -32,10 +33,11 @@
             </div>
             <div>
               <a  class="remove" id="removeCompare">Remove</i></a>
+              <input type="hidden" class="compare-input" value="2">
             </div>
             <p></p>
           </div>
-          <div class="compare-product" id="product3" style="display: none">
+          <div class="compare-product " id="product3" style="display: none">
             <img class="compare-productImage" src="images/kettle-one.jpg" >
             <div style="width: 80%; display: block; text-align: center;">
               <p>Electric Tea Kettle, Cordless Glass Pot 1.7 Liter</p>
@@ -43,6 +45,7 @@
             </div>
             <div>
               <a  class="remove" id="removeCompare">Remove</i></a>
+              <input type="hidden" class="compare-input" value="3">
             </div>
             <p></p>
           </div>
@@ -52,7 +55,7 @@
   <header>
     <span><img src="images/nav_bar.jpg" ><span>
   </header>
-  <div id="main">
+  <div id="main" >
     <article>
 
       <div id="productList">
@@ -119,7 +122,7 @@
     						</div>
               </div>
               <div style="width: 60%">
-                  <a  class="button" id="compare" name="2">Compare <i class="far fa-square"></i></i></a>
+                  <a  class="button inactive" id="compare" name="2">Compare <i class="far fa-square"></i></i></a>
                   <input type="hidden" id="compare-input" value="3">
               </div>
             </div>
@@ -189,6 +192,80 @@
                   <a  class="button" id="compare">Compare <i class="far fa-square"></i></i></a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <nav>Nav</nav>
+  </div>
+  <div  id="main2" style="display: none">
+    <article>
+      <div id="productList2">
+        <div class="product-compare" id="product-compare1">
+          <div class="product-compare-image">
+            <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="product-compare-title">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%; margin-left: 15px;">
+                <p class="seller">by COSORI</p>
+                <div>
+                  <span><img class="star-rating" src="images/star.png" ></span>
+                </div>
+                <div>
+                  <span class="currency">$</span><span>205</span><span>99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-compare-details">
+            <img class="productStatsImage" src="images/kettle-one.jpg" >
+          </div>
+        </div>
+        <div class="product-compare" id="product-compare2">
+          <div class="product-compare-image">
+            <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="product-compare-title">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%; margin-left: 15px;">
+                <p class="seller">by COSORI</p>
+                <div>
+                  <span><img class="star-rating" src="images/star.png" ></span>
+                </div>
+                <div>
+                  <span class="currency">$</span><span>205</span><span>99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-compare-details">
+            <img class="productStatsImage" src="images/kettle-one.jpg" >
+          </div>
+        </div>
+        <div class="product-compare" id="product-compare3">
+          <div class="product-compare-image">
+            <img class="productImage" src="images/kettle-one.jpg" >
+          </div>
+          <div class="product-compare-title">
+            <p class="title">Electric Tea Kettle, Cordless Glass Pot 1.7 Liter, Stainless Steel Black Hot Water heater, Fast Boiling Teapot with Automatic Shut Off - LED Light, BPA-free Great For Home Kitchen & Office Use.</p>
+            <div style="display: flex">
+              <div style="width: 40%; margin-left: 15px;">
+                <p class="seller">by COSORI</p>
+                <div>
+                  <span><img class="star-rating" src="images/star.png" ></span>
+                </div>
+                <div>
+                  <span class="currency">$</span><span>205</span><span>99</span>
+                </div>
+              </div>
+              </div>
+
+          </div>
+          <div class="product-compare-details">
+            <img class="productStatsImage" src="images/kettle-one.jpg" >
           </div>
         </div>
       </div>
